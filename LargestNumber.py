@@ -1,6 +1,8 @@
-a = int(input('Enter first number  : '))
-b = int(input('Enter second number : '))
-c = int(input('Enter third number  : '))
+import streamlit as st
+
+a = st.numberinput('Enter first number  : '))
+b = st.numberinput('Enter second number : '))
+c = st.numberinput('Enter third number  : '))
 
 largest = 0
 
@@ -11,4 +13,4 @@ if b > a and b > c:
 if c > a and c > b:
     largest = c
 
-print(largest, "is the largest of three numbers.")
+st.write(largest, "is the largest of three numbers.")
