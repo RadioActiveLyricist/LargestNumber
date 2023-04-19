@@ -12,5 +12,5 @@ if b > a and b > c:
     largest = b
 if c > a and c > b:
     largest = c
-
-st.write(largest, "is the largest of three numbers.")
+if st.button('Find Largest'):
+    st.write(largest, "is the largest of three numbers.")
